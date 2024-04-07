@@ -1,10 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+
+function RedBox() {
+  return (
+    <View style={{ height: 100, width: 100, backgroundColor: "red" }}></View>
+  );
+}
+
+function BlueBox() {
+  return (
+    <View style={{ height: 100, width: 100, backgroundColor: "blue" }}></View>
+  );
+}
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <RedBox></RedBox>
+      <BlueBox></BlueBox>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +26,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

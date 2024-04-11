@@ -33,11 +33,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "row-reverse",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
     borderWidth: 5,
     borderColor: "purple",
     backgroundColor: "#fff",
     alignItems: "center",
-    justifyContent: "center",
   },
 });

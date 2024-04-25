@@ -3,13 +3,26 @@ import { StyleSheet, Text, View } from "react-native";
 
 function RedBox() {
   return (
-    <View style={{ height: 100, width: 100, backgroundColor: "red" }}></View>
+    <View
+      style={{
+        height: 100,
+        width: 100,
+        backgroundColor: "red",
+        alignSelf: "center",
+      }}
+    ></View>
   );
 }
 
 function BlueBox() {
   return (
-    <View style={{ height: 100, width: 100, backgroundColor: "blue" }}></View>
+    <View
+      style={{
+        height: 100,
+        width: 100,
+        backgroundColor: "blue",
+      }}
+    ></View>
   );
 }
 
@@ -34,7 +47,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "flex-end",
     borderWidth: 5,
     borderColor: "purple",

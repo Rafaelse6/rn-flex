@@ -8,7 +8,6 @@ function RedBox() {
         height: 100,
         width: 100,
         backgroundColor: "red",
-        alignSelf: "center",
       }}
     ></View>
   );
@@ -38,6 +37,7 @@ export default function App() {
       <RedBox></RedBox>
       <BlueBox></BlueBox>
       <GreenBox></GreenBox>
+      <RedBox></RedBox>
       <StatusBar style="auto" />
     </View>
   );
@@ -46,9 +46,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "column",
+    flexWrap: "wrap",
+    flexDirection: "row",
     justifyContent: "flex-start",
-    alignItems: "flex-end",
+    alignItems: "flex-start",
     borderWidth: 5,
     borderColor: "purple",
     backgroundColor: "#fff",

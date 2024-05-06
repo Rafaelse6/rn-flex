@@ -37,7 +37,8 @@ export default function App() {
       <RedBox></RedBox>
       <BlueBox></BlueBox>
       <GreenBox></GreenBox>
-      <RedBox></RedBox>
+      <BlueBox></BlueBox>
+      <GreenBox></GreenBox>
       <StatusBar style="auto" />
     </View>
   );
@@ -47,7 +48,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexWrap: "wrap",
-    flexDirection: "row",
+    alignContent: "flex-start",
+    flexDirection: "column",
     justifyContent: "flex-start",
     alignItems: "flex-start",
     borderWidth: 5,

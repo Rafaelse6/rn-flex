@@ -8,6 +8,7 @@ function RedBox() {
         height: 100,
         width: 100,
         backgroundColor: "red",
+        flexBasis: 50,
       }}
     ></View>
   );
@@ -35,8 +36,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <RedBox></RedBox>
-      <BlueBox></BlueBox>
-      <GreenBox></GreenBox>
       <BlueBox></BlueBox>
       <GreenBox></GreenBox>
       <StatusBar style="auto" />

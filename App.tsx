@@ -8,7 +8,7 @@ function RedBox() {
         height: 100,
         width: 100,
         backgroundColor: "red",
-        flexBasis: 50,
+        flexGrow: 1 
       }}
     ></View>
   );
@@ -21,6 +21,7 @@ function BlueBox() {
         height: 100,
         width: 100,
         backgroundColor: "blue",
+        flexGrow: 1 
       }}
     ></View>
   );
@@ -28,7 +29,9 @@ function BlueBox() {
 
 function GreenBox() {
   return (
-    <View style={{ height: 100, width: 100, backgroundColor: "green" }}></View>
+    <View
+      style={{ height: 100, width: 100, backgroundColor: "green", flexGrow: 1 }}
+    ></View>
   );
 }
 
@@ -48,7 +51,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexWrap: "wrap",
     alignContent: "flex-start",
-    flexDirection: "column",
+    flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "flex-start",
     borderWidth: 5,
